@@ -1,0 +1,92 @@
+@font-face {
+	font-family: 'shocktherapy';
+	src: url('../font/shocktherapybb_reg.otf');
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: #333333;
+}
+
+
+#imageDisplay {
+	position: fixed;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+}
+	#image {
+		min-width: 100%;
+		min-height: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed;
+		background-size: cover;
+
+		-webkit-transition: background-image 3s; /* Safari */
+	    transition: background-image 3s;
+	}
+
+
+#logDisplay {
+	position: fixed;
+	z-index: 50;
+	width: 100%;
+}
+	#log {
+		color: white;
+		background-color: rgba(0,0,0,0.25);
+	}
+
+
+#audioDisplay {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+}
+	#audioContainer {
+		margin: 0 auto;
+	}
+
+	.audio {
+		margin: 0.1em 1em;
+
+		text-align: center;
+		font-family: 'shocktherapy', serif;
+		font-size: 4em;
+		font-size: 6vw;
+		color: #2AD2DF;
+		cursor: pointer;
+
+		background-color: rgba(0,0,0,0.35);
+		text-shadow: 0 0 0.2em #000000;
+
+		-webkit-transition: background-color 2s; /* Safari */
+	    transition: background-color 2s;
+
+	    -webkit-transition: text-shadow 2s; /* Safari */
+	    transition: text-shadow 2s;
+
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+
+	.audio:hover {
+		background-color: rgba(0,0,0,0.75);
+		text-shadow: 0 0 0.2em #73BC51;
+
+		-webkit-transition: background-color 0.2s; /* Safari */
+	    transition: background-color 0.2s;
+
+		-webkit-transition: text-shadow 0.2s; /* Safari */
+	    transition: text-shadow 0.2s;
+
+	}
